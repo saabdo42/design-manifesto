@@ -1,0 +1,18 @@
+function place(event) {
+  var x = event.clientX;
+  var y = event.clientY;
+
+  thisbox.style.top = y - 50;
+  thisbox.style.left = x - 50;
+
+  if(thisbox == box1){
+    var startx = x;
+    var starty = y;
+    ctx.moveTo(startx, starty);
+  } else{
+    ctx.strokeStyle = "#97B2F0";
+    ctx.lineWidth = 4;
+    ctx.lineTo(x, y);
+    ctx.stroke();
+  }
+}
