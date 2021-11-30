@@ -3,12 +3,8 @@ body{
     overflow: hidden;
 }
 
-#canv{
-    z-index: -3;
-}
-
-.box{
-    box-sizing: border-box;
+.step{
+    box-sizing: border-box; 
     width:100px; 
     height: 100px;
     top: 10;
@@ -18,20 +14,35 @@ body{
     border-radius: 50px;
     border-style: solid;
     border-color: #6643B5;
-    border-width: 10px;
+    border-width: 8px;
     text-align: center;
     padding-top: 20px;
     font-family: "josefin sans";
     color: white;
+    user-select: none;
 }
 
-.boxx{
+.art{
     background-color: #1A5E6B;
     border-style: solid;
     border-color: #43B5AC;
-    border-width: 10px;
+    box-sizing: border-box; 
+    width:100px; 
+    height: 100px;
+    top: 10;
+    left: 10;
+    position:absolute;
+    border-radius: 50px;
+    border-width: 8px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: "josefin sans";
+    color: white;
+    user-select: none;
 }
 
 .vis{ visibility: visible; }
 
 .invis{ visibility: hidden; }
+
+#canv{ z-index: -3; }
