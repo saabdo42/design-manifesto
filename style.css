@@ -9,6 +9,25 @@ body{
     height: 100px;
     top: 10;
     left: 10;
+    background-color: #241A6B;
+    position:absolute;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #4345B5;
+    border-width: 8px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: "josefin sans";
+    color: white;
+    user-select: none;
+}
+
+.halfstep{
+    box-sizing: border-box; 
+    width:100px; 
+    height: 100px;
+    top: 10;
+    left: 10;
     background-color: #3E1A6B;
     position:absolute;
     border-radius: 50px;
@@ -22,7 +41,7 @@ body{
     user-select: none;
 }
 
-.art{
+.boom{
     background-color: #1A5E6B;
     border-style: solid;
     border-color: #43B5AC;
