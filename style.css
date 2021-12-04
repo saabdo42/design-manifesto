@@ -3,66 +3,73 @@ body{
     overflow: hidden;
 }
 
-.step{
+.step, .halfstep, .boom, .link, #zero{
     box-sizing: border-box; 
     width:100px; 
     height: 100px;
     top: 10;
     left: 10;
-    background-color: #241A6B;
     position:absolute;
     border-radius: 50px;
     border-style: solid;
-    border-color: #4345B5;
     border-width: 8px;
     text-align: center;
-    padding-top: 20px;
     font-family: "josefin sans";
+    padding-top: 20px;
     color: white;
     user-select: none;
 }
 
-#zero:hover{
-    background-color: #6B1A3B;
-    border-color: #BC448C;
+.step{
+    background-color: #241A6B;
+    border-color: #4345B5;
 }
 
 .halfstep{
-    box-sizing: border-box; 
-    width:100px; 
-    height: 100px;
-    top: 10;
-    left: 10;
     background-color: #3E1A6B;
-    position:absolute;
-    border-radius: 50px;
-    border-style: solid;
     border-color: #6643B5;
-    border-width: 8px;
-    text-align: center;
-    padding-top: 20px;
-    font-family: "josefin sans";
-    color: white;
-    user-select: none;
 }
 
 .boom{
     background-color: #1A5E6B;
-    border-style: solid;
     border-color: #43B5AC;
-    box-sizing: border-box; 
-    width:100px; 
-    height: 100px;
-    top: 10;
-    left: 10;
-    position:absolute;
-    border-radius: 50px;
-    border-width: 8px;
-    text-align: center;
-    padding-top: 20px;
-    font-family: "josefin sans";
-    color: white;
-    user-select: none;
+}
+
+.link{
+    background-color: #6B1A3B;
+    border-color: #BC448C;
+}
+
+#zero{ z-index: 5; }
+
+#zero:hover, .link:hover{
+    top:4px;
+    left:4px;
+    width:112px;
+    height:112px;
+    border-width: 14px;
+    border-radius:62px;
+}
+
+.pathA, .blue{
+    background-color: #241A6B;
+    border-color: #4345B5;
+}
+
+.pathB, .purple{
+    background-color: #3E1A6B;
+    border-color: #6643B5;
+}
+
+.pathC, .green{
+    background-color: #1A5E6B;
+    border-color: #43B5AC;
+}
+
+.long{ 
+    white-space: nowrap;
+    overflow:visible;
+    padding-top: 10px;
 }
 
 .vis{ visibility: visible; }
@@ -70,4 +77,18 @@ body{
 .invis{ visibility: hidden; }
 
 #canv{ z-index: -3; }
-#cav2{ z-index: -4; }
+
+#rules{
+    font-family: "josefin sans";
+    z-index: -1;
+    top: 40px;
+    left:150px;
+    position:absolute;
+    color:gray;
+}
+
+#copyright{
+    color:white;
+    font-family: "josefin sans";
+    position:absolute;
+}
